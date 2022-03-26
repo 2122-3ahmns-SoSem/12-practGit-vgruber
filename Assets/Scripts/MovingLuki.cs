@@ -11,7 +11,7 @@ public class MovingLuki : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lukiii = GameObject.FindGameObjectWithTag("PLayer");
+        lukiii = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
