@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class showerScript : MonoBehaviour
 {
-    [SerializeField] private GameObject shower;
 
-    // Start is called before the first frame update
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public virtual void Hit()
     {
-        if(collision.collider.tag == "Target")
-        {
-            Debug.Log("No more gaslighting for ronja");
-        }
+        
     }
-
 }
