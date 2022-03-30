@@ -7,13 +7,13 @@ public class showerScript : MonoBehaviour
     [SerializeField] private GameObject shower;
 
     // Start is called before the first frame update
-    void Start()
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if(collision.collider.tag == "Target")
+        {
+            Debug.Log("No more gaslighting for ronja");
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Destroy(shower);
-    }
 }
